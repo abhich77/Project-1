@@ -1,0 +1,19 @@
+1.create project template by executing template.py file
+2.write code on setup.py and pyproject.toml to import local packages
+3.create virtual env,activate it and install requirements from requirements.txt
+  conda create -n vehicle python=3.14 -y
+  conda activate vehicle
+  add required modules to requirements.txt
+  do "pip install -r requirements.txt"
+
+  4.do a "pip list" on terminal to make sure you have local packages installed.
+
+  mongo db setup
+
+  5.sign in to mongo db atlas and create new project
+  6.create a new cluster
+  7.setup username and password and create DB user "abhirajcug23ee_db_user" "pHVxmLDFopdSxfmi" "mongodb+srv://abhirajcug23ee_db_user:<db_password>@cluster0.4boagp7.mongodb.net/?appName=Cluster0"
+  8. go to network access and add "0.0.0.0/0" so we can access from anywhere
+  9.hit on get connection string and select python
+  10.copy and save connection string
+  11.create a new folder notebook>>create file>> mongo_db.input

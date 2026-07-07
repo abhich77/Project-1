@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+.projectflow.txt
+.notebook/mongodb_demo.ipynb
+
+
+
 # Distribution / packaging
 .Python
 build/

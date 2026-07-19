@@ -222,3 +222,5 @@ __marimo__/
 .streamlit/secrets.toml
 
 artifact/
+notebook/
+projectflow.txt

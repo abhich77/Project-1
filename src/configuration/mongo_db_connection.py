@@ -3,7 +3,7 @@ import sys
 import pymongo
 import certifi
 
-from src.exception import MYException
+from src.exception import MyException
 from src.logger import logging
 from src.constants import DATABASE_NAME,MONGODB_URL_KEY
 
@@ -56,7 +56,7 @@ class MongoDBClient:
                    logging.info("MongoDB connection successful.")
 
          except Exception as e:
-              raise MYException(e,sys)
+              raise MyException(e,sys)
                           
            
                    

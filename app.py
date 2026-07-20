@@ -132,10 +132,10 @@ async def predictRouteClient(request: Request):
         status = "Response-Yes" if value == 1 else "Response-No"
 
         # Render the same HTML page with the prediction result
-        return templates.TemplateResponse(
-            "vehicledata.html",
-            {"request": request, "context": status},
-        )
+        templates.TemplateResponse(
+        name="vehicledata.html",
+        context={"request": request, "context": "Rendering"}
+)
         
     except Exception as e:
         return {"status": False, "error": f"{e}"}

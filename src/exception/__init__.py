@@ -36,10 +36,10 @@ class MyException(Exception):
         self.error_message=error_message_detail(error_message,error_detail)
 
 
-def __str__(self)->str:
-    """
+    def __str__(self)->str:
+        """
     return string representation of error message. 
-    """
-    return self.error_message          
+        """
+        return self.error_message          
 
 

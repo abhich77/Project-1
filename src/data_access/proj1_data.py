@@ -1,7 +1,7 @@
 import sys
 import pandas as pd
 import numpy as np
-from typing import  Optional
+from typing import Optional
 
 from src.configuration.mongo_db_connection import MongoDBClient
 from src.constants import DATABASE_NAME
@@ -52,6 +52,6 @@ class Proj1Data:
                 df = df.drop(columns=["id"], axis=1)
             df.replace({"na":np.nan},inplace=True)
             return df
+
         except Exception as e:
             raise MyException(e, sys)
-
